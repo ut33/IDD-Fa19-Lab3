@@ -1,6 +1,6 @@
 # Data Logger (and using cool sensors!)
 
-*A lab report by John Q. Student.*
+*A lab report by Vini Tripathii*
 
 ## In The Report
 
@@ -22,7 +22,7 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
  
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
 
-**a. What voltage values do you see from your force sensor?**
+**a. What voltage values do you see from your force sensor?** Ranges from 0 to 1023 like potentiometer
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
 
