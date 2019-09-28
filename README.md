@@ -32,7 +32,7 @@ The key function was map(value, fromLow, fromHigh, toLow, toHigh), map allows yo
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?** I used two 10K resistors for a total of 20K 
 
-**e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
+**e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)** Both are logarithimic though the in the photocell's case a linear approximation would also work well.
 
 ### 2. Accelerometer
  
