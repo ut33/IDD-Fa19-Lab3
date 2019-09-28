@@ -16,7 +16,7 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 ## Part B. RGB LED
 
-**How might you use this with only the parts in your kit? Show us your solution.**
+**How might you use this with only the parts in your kit? Show us your solution.** Video:
 
 ## Part C. Voltage Varying Sensors 
  
@@ -26,9 +26,11 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)** The relationship is logarithimic as a small change in force corresponds to a large change in voltage (increase).
 
-**c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
+**c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?** video 1 -- using force sensor to fade LED:
+video 2 -- using force sensor to change LED color (it was hard to control the force to show the different colors):
+The key function was map(value, fromLow, fromHigh, toLow, toHigh), map allows you to change the value range.
 
-**d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?**
+**d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?** I used two 10K resistors for a total of 20K 
 
 **e. What kind of relationship does the resistance have as a function of stimulus? (e.g., linear?)**
 
