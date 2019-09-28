@@ -12,7 +12,7 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?** 0 to 1023
  
-**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?** 10
+**b. How many bits of resolution does the analog to digital converter (ADC) on the Arduino have?** 10 bits (2^10 = 1024)
 
 ## Part B. RGB LED
 
@@ -22,9 +22,9 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
  
 ### 1. FSR, Flex Sensor, Photo cell, Softpot
 
-**a. What voltage values do you see from your force sensor?** Ranges from 0 to 1023 like potentiometer
+**a. What voltage values do you see from your force sensor?** Ranges from 0 (no force) to 1023(5V -- output for large amounts of force).
 
-**b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)**
+**b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)** The relationship is logarithimic as a small change in force corresponds to a large change in voltage (increase).
 
 **c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?**
 
@@ -36,13 +36,7 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
  
 **a. Include your accelerometer read-out code in your write-up.**
 
-### 3. IR Proximity Sensor
-
-**a. Describe the voltage change over the sensing range of the sensor. A sketch of voltage vs. distance would work also. Does it match up with what you expect from the datasheet?**
-
-**b. Upload your merged code to your lab report repository and link to it here.**
-
-## Optional. Graphic Display
+## Graphic Display
 
 **Take a picture of your screen working insert it here!**
 
