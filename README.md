@@ -2,12 +2,6 @@
 
 *A lab report by Vini Tripathii*
 
-## In The Report
-
-Include your responses to the bold questions on your own fork of [this lab report template](https://github.com/FAR-Lab/IDD-Fa18-Lab2). Include snippets of code that explain what you did. Deliverables are due next Tuesday. Post your lab reports as README.md pages on your GitHub, and post a link to that on your main class hub page.
-
-For this lab, we will be experimenting with a variety of sensors, sending the data to the Arduino serial monitor, writing data to the EEPROM of the Arduino, and then playing the data back.
-
 ## Part A.  Writing to the Serial Monitor
  
 **a. Based on the readings from the serial monitor, what is the range of the analog values being read?** 0 to 1023
@@ -26,8 +20,8 @@ For this lab, we will be experimenting with a variety of sensors, sending the da
 
 **b. What kind of relationship does the voltage have as a function of the force applied? (e.g., linear?)** The relationship is logarithimic as a small change in force corresponds to a large change in voltage (increase).
 
-**c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?** video 1 -- using force sensor to fade LED:
-video 2 -- using force sensor to change LED color (it was hard to control the force to show the different colors):
+**c. Can you change the LED fading code values so that you get the full range of output voltages from the LED when using your FSR?** video 1 -- using force sensor to fade LED: https://youtu.be/spUxtUhEbzQ
+video 2 -- using force sensor to change LED color (it was hard to control the force to show the different colors): https://youtu.be/FZXDIQBEVHU
 The key function was map(value, fromLow, fromHigh, toLow, toHigh), map allows you to change the value range.
 
 **d. What resistance do you need to have in series to get a reasonable range of voltages from each sensor?** I used two 10K resistors for a total of 20K 
