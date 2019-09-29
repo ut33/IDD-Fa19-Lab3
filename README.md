@@ -46,13 +46,13 @@ The key function was map(value, fromLow, fromHigh, toLow, toHigh), map allows yo
  
 ### 1. Reading and writing values to the Arduino EEPROM
 
-**a. Does it matter what actions are assigned to which state? Why?**
+**a. Does it matter what actions are assigned to which state? Why?** Yes, because if the "clear" action is state 1, the memory will be cleared on our way to read/write to memory.
 
-**b. Why is the code here all in the setup() functions and not in the loop() functions?**
+**b. Why is the code here all in the setup() functions and not in the loop() functions?** Since only one operation (R/W/C) is performed at each switch state it would be inefficient to have everything in loop().
 
-**c. How many byte-sized data samples can you store on the Atmega328?**
+**c. How many byte-sized data samples can you store on the Atmega328?** 1024 bytes
 
-**d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?**
+**d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?** Since the analog input ranges from 0 to 1023, and each byte of the EEPROM has a range of 0 to 255, divide by 4. For the I2C
 
 **e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
 
