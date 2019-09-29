@@ -52,9 +52,10 @@ The key function was map(value, fromLow, fromHigh, toLow, toHigh), map allows yo
 
 **c. How many byte-sized data samples can you store on the Atmega328?** 1024 bytes
 
-**d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?** Since the analog input ranges from 0 to 1023, and each byte of the EEPROM has a range of 0 to 255, divide by 4. For the I2C
+**d. How would you get analog data from the Arduino analog pins to be byte-sized? How about analog data from the I2C devices?** Since the analog input ranges from 0 to 1023, and each byte of the EEPROM has a range of 0 to 255, divide by 4 or use the map function. For the I2C, data is sent in 8-bit bytes, and can be managed accordly. 
 
-**e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)**
+**e. Alternately, how would we store the data if it were bigger than a byte? (hint: take a look at the [EEPROMPut](https://www.arduino.cc/en/Reference/EEPROMPut) example)** If the data is too big for a single byte then multiple bytes should be used. The EEPROM procedures would have to be used several times
+
 
 **Upload your modified code that takes in analog values from your sensors and prints them back out to the Arduino Serial Monitor.**
 
